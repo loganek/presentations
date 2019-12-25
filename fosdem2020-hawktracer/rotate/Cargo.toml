@@ -1,0 +1,16 @@
+[package]
+name = "rotate-rs"
+version = "0.1.0"
+authors = ["Marcin Kolny <mkolny@amazon.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = "0.8.5"
+rust-s3 = "0.18.11"
+
+[dependencies.rust_hawktracer]
+git = "https://github.com/AlexEne/rust_hawktracer"
+features=["profiling_enabled", "pkg_config", "generate_bindings"]
